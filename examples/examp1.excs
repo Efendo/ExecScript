@@ -1,0 +1,7 @@
+void output(const str content) {
+    print content;
+}
+
+int main() {
+    output("hi");
+}
