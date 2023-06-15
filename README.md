@@ -9,3 +9,5 @@ made by Efendo
 [Efendo's Github](https://github.com/Efendo)
 
 [View on Github](https://github.com/Efendo/ExecScript/)
+
+# #! This is an alpha, not everything is final !#
