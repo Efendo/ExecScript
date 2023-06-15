@@ -7,3 +7,5 @@ made by Efendo
 [Docs](/ExecScript/docs/Hello%20excs!.md)
 
 [Efendo's Github](https://github.com/Efendo)
+
+[View on Github](https://github.com/Efendo/ExecScript/)
