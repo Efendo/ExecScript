@@ -1,4 +1,6 @@
 # ExecScript
+<link rel="icon" type="image/x-icon" href="ExecScript.ico">
+
 ## sounds like the js function, is a cpp dialect
 this is a programming language called ExecScript thats like cpp but supposed to be easier
 
