@@ -14,18 +14,18 @@ ExecScript is a C++ Dialect that's intended to make C++ look a little bit like B
 ## The Compiler
 The compiler isnt really a compiler. once you start it you can pass two arguments. First one is the file to be "compiled" and the second one is the name of the output file. Heres an example:
 ````
-excs file to compile: file.excs
-
-name of the output file [for example 'main' ] : output
+excs file: file.excs
+compile as: output
 ````
 
 ## Installation
-i Dont know how to turn it into a runnable command. However you can clone it using git and create a shell function in your .bashrc or .zshrc
-like this:
+execute this command to install ExecScript:
 ````Shell
-excs(){
-    ExecScript/compiler/main.cpp
-}
+git clone https://github.com/Efendo/ExecScript/;chmod +x ExecScript/bin64/excs-compiler
+````
+then add it to your path
+````Shell
+export PATH="$PATH:$HOME/ExecScript/bin64/"
 ````
 
 ## Keywords / Macros

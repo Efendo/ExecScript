@@ -7,16 +7,15 @@
 ExecScript compiler made by Efendo <https://github.com/Efendo/> for the ExecScript language.
 
 Date of Creation: 15th of july 2023
-Last modified: 15th of july 2023
+Last modified: 16th of july 2023
 */
 
 int main() {
     std::string filename = "main.ecs";
     std::string OfName = "main";
-    std::cout << "excs file to compile: ";
+    std::cout << "excs file: ";
     std::cin >> filename;
-    std::cout << "\n";
-    std::cout << "name of the output file [for example 'main' ] : ";
+    std::cout << "compile as: ";
     std::cin >> OfName;
     std::string fileContents = getFileContents(filename);
 
