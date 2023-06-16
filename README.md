@@ -27,6 +27,11 @@ then add it to your path
 ````Shell
 export PATH="$PATH:$HOME/ExecScript/bin64/"
 ````
+Now to run the compiler type:
+````Shell
+excs-compiler
+````
+###### You cant pass arguments with the command
 
 ## Keywords / Macros
 
