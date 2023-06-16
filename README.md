@@ -1,4 +1,10 @@
-# ExecScript
+# ![](ExecScript.ico) 
+<style>
+    h1,h2,p,a,h6 {
+        text-align: center;
+    }
+</style>
+<h1>ExecScript</h1>
 <link rel="icon" type="image/x-icon" href="ExecScript.ico">
 
 ## sounds like the js function, is a cpp dialect
@@ -34,21 +40,15 @@ excs-compiler
 ###### You cant pass arguments with the command
 
 ## Keywords / Macros
+"str [VarName]" A macro for std::string
 
-- "str [VarName]"
-A macro for std::string
+"print [Content]" A Macro for std::cout<<
 
-- "print [Content]"
-A Macro for std::cout<<
+"input [Var]" A macro for std::cin>>
 
-- "input [Var]"
-A macro for std::cin>>
+"pointer [VarName]" A macro for char*
 
-- "pointer [VarName]"
-A macro for char*
-
-- "clr_text"
-A macro to clear the console
+"clr_text" A macro to clear the console
 
 # Links
 
