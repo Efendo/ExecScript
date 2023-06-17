@@ -36,7 +36,7 @@ compile as: output
 
 ## Installation
 ### Requirements and notes
-- GCC 13, to confirm that you have it run g++-13 -v
+- GCC, to confirm that you have it run g++ -v
 ##
 execute this command to install ExecScript:
 ````Shell
