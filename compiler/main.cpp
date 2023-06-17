@@ -11,7 +11,7 @@ Last modified: 17th of july 2023
 */
 
 int main() {
-    std::string filename = "main.ecs";
+    std::string filename = "main.excs";
     std::string OfName = "main";
     std::cout << "excs file: ";
     std::cin >> filename;
