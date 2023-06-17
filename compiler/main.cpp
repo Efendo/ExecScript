@@ -7,7 +7,7 @@
 ExecScript compiler made by Efendo <https://github.com/Efendo/> for the ExecScript language.
 
 Date of Creation: 15th of july 2023
-Last modified: 16th of july 2023
+Last modified: 17th of july 2023
 */
 
 int main() {
@@ -26,7 +26,7 @@ int main() {
     midcomp << headings << fileContents;
     midcomp.close();
 
-    std::string cmd = "g++-13 .midcomp.cpp -o " + OfName;
+    std::string cmd = "cpp-13 .midcomp.cpp -o " + OfName;
 
     if (std::system(cmd.c_str()) == 0) {
         std::cout << "Compilation successful." << std::endl;
