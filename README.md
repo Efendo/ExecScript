@@ -1,4 +1,3 @@
-# ![](ExecScript.ico) 
 <style>
     h1,h2,p,a,h6 {
         text-align: center;
@@ -41,7 +40,7 @@ execute this command to install ExecScript:
 git clone https://github.com/Efendo/ExecScript/;chmod +x ExecScript/bin64/excs-compiler
 ````
 
-###### Note: it has been compiled on x86-64 mac, you may have to recompile it using: ```` cpp-13 ExecScript/compiler/main.cpp -o ExecScript/bin64/excs-compiler    ````
+##### Note: it has been compiled on x86-64 mac, you may have to recompile it using: ```` cpp-13 ExecScript/compiler/main.cpp -o ExecScript/bin64/excs-compiler    ````
 
 then add it to your path
 ````Shell
@@ -51,7 +50,7 @@ Now to run the compiler type:
 ````Shell
 excs-compiler
 ````
-###### You cant pass arguments with the command
+##### You cant pass arguments with the command
 
 ## Keywords / Macros
 "str [VarName]" A macro for std::string
