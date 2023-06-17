@@ -2,6 +2,12 @@
 <style>
     h1,h2,p,a,h6 {
         text-align: center;
+        color: white;
+    }
+
+    body {
+        background: rgb(0,172,255);
+        background: linear-gradient(69deg, rgba(0,172,255,1) 46%, rgba(0,202,255,1) 53%, rgba(0,236,255,1) 58%, rgba(0,255,239,1) 67%, rgba(0,255,106,1) 100%); 
     }
 </style>
 <h1>ExecScript</h1>
