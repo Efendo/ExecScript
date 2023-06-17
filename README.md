@@ -34,17 +34,16 @@ excs file: file.excs
 compile as: output
 ````
 
-## Installation
-### Requirements and notes
+## Requirements and notes
 - GCC, to confirm that you have it run g++ -v
 
-##
+## Install ExecScript
 execute this command to install ExecScript:
 ````Shell
 git clone https://github.com/Efendo/ExecScript/;chmod +x ExecScript/bin64/excs-compiler
 ````
 
-##### Note: it has been compiled on x86-64 mac, you may have to recompile it using: ```` cpp-13 ExecScript/compiler/main.cpp -o ExecScript/bin64/excs-compiler    ````
+##### Note: it has been compiled on x86-64 mac, you may have to recompile it using: ```` g++ ExecScript/compiler/main.cpp -o ExecScript/bin64/excs-compiler    ````
 
 then add it to your path
 ````Shell
