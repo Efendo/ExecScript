@@ -26,7 +26,7 @@ int main() {
     midcomp << headings << fileContents;
     midcomp.close();
 
-    std::string cmd = "g++ .midcomp.cpp -o " + OfName;
+    std::string cmd = "g++-13 .midcomp.cpp -o " + OfName;
 
     if (std::system(cmd.c_str()) == 0) {
         std::cout << "Compilation successful." << std::endl;
