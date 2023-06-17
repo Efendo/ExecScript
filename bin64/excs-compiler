@@ -37579,7 +37579,7 @@ std::string getFileContents(const std::string& filename) {
 # 5 "compiler/main.cpp" 2
 # 13 "compiler/main.cpp"
 int main() {
-    std::string filename = "main.ecs";
+    std::string filename = "main.excs";
     std::string OfName = "main";
     std::cout << "excs file: ";
     std::cin >> filename;
@@ -37590,12 +37590,10 @@ int main() {
     std::cout << fileContents << std::endl;
 
     std::ofstream midcomp(".midcomp.cpp");
-    std::string headings = "#include <iostream>\n#define print std::cout<<\n#define input std::cin>>\n#define str std::string\n#define pointer char*\n#define clr_text system(\"clear\")\n";
+    std::string headings = "#include <iostream>\n#define print std::cout<<\n#define NumPointer int*\n#define is ==\n#define mod %\n#define input std::cin>>\n#define str std::string\n#define pointer char*\n#define clr_text system(\"clear\")\n";
     midcomp << headings << fileContents;
     midcomp.close();
-
     std::string cmd = "cpp-13 .midcomp.cpp -o " + OfName;
-
     if (std::system(cmd.c_str()) == 0) {
         std::cout << "Compilation successful." << std::endl;
     } else {

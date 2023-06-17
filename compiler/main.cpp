@@ -22,12 +22,10 @@ int main() {
     std::cout << fileContents << std::endl;
     
     std::ofstream midcomp(".midcomp.cpp");
-    std::string headings = "#include <iostream>\n#define print std::cout<<\n#define input std::cin>>\n#define str std::string\n#define pointer char*\n#define clr_text system(\"clear\")\n";
+    std::string headings = "#include <iostream>\n#define print std::cout<<\n#define NumPointer int*\n#define is ==\n#define mod %\n#define input std::cin>>\n#define str std::string\n#define pointer char*\n#define clr_text system(\"clear\")\n";
     midcomp << headings << fileContents;
     midcomp.close();
-
     std::string cmd = "cpp-13 .midcomp.cpp -o " + OfName;
-
     if (std::system(cmd.c_str()) == 0) {
         std::cout << "Compilation successful." << std::endl;
     } else {

@@ -66,6 +66,12 @@ excs-compiler
 
 "clr_text" A macro to clear the console
 
+"NumPointer [VarName]" a macro for int*
+
+"is" a macro for ==
+
+"mod" a macro for % (modulo)
+
 # Links
 
 [Efendo's Github](https://github.com/Efendo)
