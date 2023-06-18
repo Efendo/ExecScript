@@ -72,6 +72,8 @@ excs-compiler
 
 "mod" a macro for % (modulo)
 
+"blueprint" a macro for class
+
 # Links
 
 [Efendo's Github](https://github.com/Efendo)
