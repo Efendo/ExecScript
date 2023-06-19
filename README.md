@@ -67,23 +67,23 @@ excs-compiler
 ##### You cant pass arguments with the command
 
 ## Keywords / Macros
-"str [VarName]" A macro for std::string
+- "str [VarName]" A macro for std::string
 
-"print [Content]" A Macro for std::cout<<
+- "print [Content]" A Macro for std::cout<<
 
-"input [Var]" A macro for std::cin>>
+- "input [Var]" A macro for std::cin>>
 
-"pointer [VarName]" A macro for char*
+- "pointer [VarName]" A macro for char*
 
-"clr_text" A macro to clear the console
+- "clr_text" A macro to clear the console
 
-"NumPointer [VarName]" a macro for int*
+- "NumPointer [VarName]" a macro for int*
 
-"is" a macro for ==
+- "is" a macro for ==
 
-"mod" a macro for % (modulo)
+- "mod" a macro for % (modulo)
 
-"blueprint" a macro for class
+- "blueprint" a macro for class
 
 # Links
 
