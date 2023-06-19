@@ -92,3 +92,5 @@ excs-compiler
 [View Website](https://tinyurl.com/ExecScript)
 
 [View on Github](https://github.com/Efendo/ExecScript/)
+
+[Try it on replit](https://replit.com/@Efendo/ExecScript?v=1)
