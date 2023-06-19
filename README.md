@@ -15,7 +15,7 @@
     a[href='https://efendo.github.io/ExecScript/'] {
   		pointer-events: none;
   		cursor: default;
-      	opacity: 0;
+      	visibility: hidden;
 	}
 
 
