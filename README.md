@@ -1,15 +1,22 @@
 <style>
     h1,h2,h5,p,a,h6 {
         text-align: center;
+      	color: white;
     }
 
     a {
-        color: white;
+        color: #00ff66;
     }
+        
+    a[href='https://efendo.github.io/ExecScript/'] {
+  		pointer-events: none;
+  		cursor: default;
+      	opacity: 0;
+	}
+
 
     body {
-        background: rgb(0,121,255);
-        background: linear-gradient(69deg, rgba(0,121,255,1) 46%, rgba(0,142,255,1) 53%, rgba(0,185,255,1) 58%, rgba(0,174,220,1) 79%, rgba(0,255,154,1) 100%); 
+        background: #010b1c;
     }
 </style>
 <h1>ExecScript</h1>
