@@ -1,5 +1,5 @@
 <style>
-    h1,h2,h5,p,a,h6 {
+    h1,h2,h5,p,a,h6,li {
         text-align: center;
       	color: white;
     }
