@@ -1,7 +1,11 @@
 <style>
-    h1,h2,h5,p,a,h6,li {
+    h1,h2,h5,p,a,h6 {
         text-align: center;
       	color: white;
+    }
+
+    li {
+        color: white;
     }
 
     a {
