@@ -7,7 +7,7 @@
         background: #010b1c;
         border-radius: 25px;
         padding: 16px;
-        margin: 10px;
+        margin: 16px;
     }
         
     a[href='https://efendo.github.io/ExecScript/'] {
