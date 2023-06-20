@@ -1,23 +1,6 @@
 <style>
     h1,h2,h5,p,a,h6 {
-        background: #010b1c;
-        border-radius: 25px;
-        padding: 16px;
-        margin: 10px;
         text-align: center;
-      	color: white;
-    }
-
-    ul {
-        background: #010b1c;
-        border-radius: 25px;
-        padding: 16px;
-        margin: 10px;
-        text-align: left;
-    }
-
-    li {
-        color: white;
     }
 
     a {
