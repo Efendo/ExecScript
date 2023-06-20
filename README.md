@@ -6,6 +6,7 @@
         margin: 10px;
         text-align: center;
       	color: white;
+        background-blend-mode: multiply;
     }
 
     ul {
