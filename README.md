@@ -1,7 +1,19 @@
 <style>
     h1,h2,h5,p,a,h6 {
+        background: #010b1c;
+        border-radius: 25px;
+        padding: 16px;
+        margin: 10px;
         text-align: center;
       	color: white;
+    }
+
+    ul {
+        background: #010b1c;
+        border-radius: 25px;
+        padding: 16px;
+        margin: 10px;
+        text-align: left;
     }
 
     li {
@@ -9,7 +21,10 @@
     }
 
     a {
-        color: #00ff66;
+        background: #010b1c;
+        border-radius: 25px;
+        padding: 16px;
+        margin: 10px;
     }
         
     a[href='https://efendo.github.io/ExecScript/'] {
@@ -17,12 +32,8 @@
   		cursor: default;
       	visibility: hidden;
 	}
-
-
-    body {
-        background: #010b1c;
-    }
 </style>
+![](favicon.ico)
 <h1>ExecScript</h1>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 
@@ -69,7 +80,7 @@ excs-compiler
 ## Keywords / Macros
 - "str [VarName]" A macro for std::string
 
-- "print [Content]" A Macro for std::cout<<
+- "print [Content]" A Macro for std::cout<<html
 
 - "input [Var]" A macro for std::cin>>
 
