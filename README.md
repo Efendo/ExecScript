@@ -47,7 +47,7 @@ execute this command to install ExecScript:
 git clone https://github.com/Efendo/ExecScript/;chmod +x ExecScript/bin64/excs-compiler
 ````
 
-##### Note: it has been compiled on x86-64 mac, you may have to recompile it using: ```` g++ ExecScript/compiler/main.cpp -o ExecScript/bin64/excs-wrapper    ````
+##### Note: it has been compiled on x86-64 mac, you may have to recompile it using: ```` g++ ExecScript/wrapper/wrapper.cpp -o ExecScript/bin64/excs-wrapper    ````
 
 then add it to your path
 ````Shell
