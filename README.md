@@ -6,7 +6,6 @@
         margin: 10px;
         text-align: center;
       	color: white;
-        background-blend-mode: multiply;
     }
 
     ul {
@@ -34,7 +33,7 @@
       	visibility: hidden;
 	}
 </style>
-![](favicon.ico)
+<img src="favicon.ico" />
 <h1>ExecScript</h1>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 
