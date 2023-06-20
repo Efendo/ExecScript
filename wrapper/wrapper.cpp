@@ -4,10 +4,9 @@
 #include "getFile.hpp"
 
 /*
-ExecScript compiler made by Efendo <https://github.com/Efendo/> for the ExecScript language.
+ExecScript wrapper made by Efendo <https://github.com/Efendo/> for the ExecScript language.
 
 Date of Creation: 15th of july 2023
-Last modified: 17th of july 2023
 */
 
 int main() {

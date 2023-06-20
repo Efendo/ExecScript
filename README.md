@@ -31,11 +31,11 @@ this is a programming language called ExecScript thats like cpp but supposed to 
 ## What is ExecScript?
 ExecScript is a C++ Dialect that's intended to make C++ look a little bit like Basic.
 
-## The Compiler
-The compiler isnt really a compiler. once you start it you can pass two arguments. First one is the file to be "compiled" and the second one is the name of the output file. Heres an example:
+## The Wrapper
+Once you start the ExecScript Wrapper you can pass two arguments. First one is the file to be wrapped and the second one is the name of the output file. Heres an example:
 ````
 excs file: file.excs
-compile as: output
+build as: output
 ````
 
 ## Requirements and notes
@@ -47,7 +47,7 @@ execute this command to install ExecScript:
 git clone https://github.com/Efendo/ExecScript/;chmod +x ExecScript/bin64/excs-compiler
 ````
 
-##### Note: it has been compiled on x86-64 mac, you may have to recompile it using: ```` g++ ExecScript/compiler/main.cpp -o ExecScript/bin64/excs-compiler    ````
+##### Note: it has been compiled on x86-64 mac, you may have to recompile it using: ```` g++ ExecScript/compiler/main.cpp -o ExecScript/bin64/excs-wrapper    ````
 
 then add it to your path
 ````Shell
@@ -55,7 +55,7 @@ export PATH="$PATH:$HOME/ExecScript/bin64/"
 ````
 Now to run the compiler type:
 ````Shell
-excs-compiler
+excs-wrapper
 ````
 ##### You cant pass arguments with the command
 
