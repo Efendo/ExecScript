@@ -74,6 +74,8 @@ excs-wrapper
 
 - "is" a macro for ==
 
+- "isnt" a macro for !=
+
 - "mod" a macro for % (modulo)
 
 - "blueprint" a macro for class
