@@ -11,7 +11,7 @@ Date of Creation: 15th of july 2023
 */
 
 int main(int argc, char** argv) {
-    if (argc == 3 && strcmp(argv[1], "-c") == 0){
+    if (argc == 4 && strcmp(argv[1], "-c") == 0){
         std::string filename = argv[2];
         std::string OfName = argv[3];
         std::string fileContents = getFileContents(filename);
@@ -36,7 +36,6 @@ int main(int argc, char** argv) {
         << std::endl;
         return 1;
     } else {
-        std::cout << argc << std::endl;
         std::cerr << "Usage: \n"
                   << "    -c compile two files. Its arguments are [File to compile] [Output file]\n"
                   << "    -h prints a help prompt. Dont pass any other arguments with it\n"
