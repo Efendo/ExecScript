@@ -33,7 +33,7 @@ ExecScript is a C++ Dialect that's intended to make C++ look a little bit like B
 
 Here's some example code:
 ````C++
-Main {
+main {
     print "This is ExecScript!";
     print 5 mod 6;
     print 5 is 5;
