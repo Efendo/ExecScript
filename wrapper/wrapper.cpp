@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 #include "getFile.hpp"
+#include <cstring>
 
 /*
 ExecScript wrapper made by Efendo <https://github.com/Efendo/> for the ExecScript language.
