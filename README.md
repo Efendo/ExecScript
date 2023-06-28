@@ -31,10 +31,13 @@ this is a programming language called ExecScript thats like cpp but supposed to 
 ## What is ExecScript?
 ExecScript is a C++ Dialect that's intended to make C++ look a little bit like Basic.
 
-## The Wrapper
-Once you start the ExecScript Wrapper you can pass two arguments. First one is the file to be wrapped and the second one is the name of the output file. Heres an example:
-````
-excs-wrapper main.excs main
+Here's some example code:
+````C++
+Main {
+    print "This is ExecScript!";
+    print 5 mod 6;
+    print 5 is 5;
+}
 ````
 
 ## Requirements and notes
@@ -52,9 +55,15 @@ then add it to your path
 ````Shell
 export PATH="$PATH:$HOME/ExecScript/bin64/"
 ````
-Now to run the compiler type:
+
+To compile a file, type:
 ````Shell
-excs-wrapper [FileToCompile] [OutputFile]
+excs-wrapper -c [FileToCompile] [OutputFile]
+````
+
+To get help, type:
+````Shell
+excs-wrapper -h
 ````
 
 ## Keywords / Macros
