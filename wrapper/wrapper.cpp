@@ -9,17 +9,13 @@ ExecScript wrapper made by Efendo <https://github.com/Efendo/> for the ExecScrip
 Date of Creation: 15th of july 2023
 */
 
-int main() {
-    std::string filename = "main.excs";
-    std::string OfName = "main";
-    std::cout << "excs file: ";
-    std::cin >> filename;
-    std::cout << "compile as: ";
-    std::cin >> OfName;
+int main(int argc, char** argv) {
+    if (argc == 3){
+    std::string filename = argv[1];
+    std::string OfName = argv[2];
     std::string fileContents = getFileContents(filename);
 
     std::cout << fileContents << std::endl;
-    
     std::ofstream midcomp(".midcomp.cpp");
     std::string headings = "#include <iostream>\n#define print std::cout<<\n#define NumPointer int*\n#define isnt !=\n#define blueprint class\n#define is ==\n#define mod %\n#define input std::cin>>\n#define str std::string\n#define pointer char*\n#define clr_text system(\"clear\")\n";
     midcomp << headings << fileContents;
@@ -32,5 +28,8 @@ int main() {
     }
 
     system("rm .midcomp.cpp");
+    } else {
+        std::cerr << "\033[31mUsage: excs-wrapper [File to compile] [Output File]\033[0m\n";
+    }
     return 0;
 }

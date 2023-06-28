@@ -34,8 +34,7 @@ ExecScript is a C++ Dialect that's intended to make C++ look a little bit like B
 ## The Wrapper
 Once you start the ExecScript Wrapper you can pass two arguments. First one is the file to be wrapped and the second one is the name of the output file. Heres an example:
 ````
-excs file: file.excs
-build as: output
+excs-wrapper main.excs main
 ````
 
 ## Requirements and notes
@@ -44,7 +43,7 @@ build as: output
 ## Install ExecScript
 execute this command to install ExecScript:
 ````Shell
-git clone https://github.com/Efendo/ExecScript/;chmod +x ExecScript/bin64/excs-compiler
+git clone https://github.com/Efendo/ExecScript/;chmod +x ExecScript/bin64/excs-wrapper
 ````
 
 ##### Note: it has been compiled on x86-64 mac, you may have to recompile it using: ```` g++ ExecScript/wrapper/wrapper.cpp -o ExecScript/bin64/excs-wrapper    ````
@@ -55,9 +54,8 @@ export PATH="$PATH:$HOME/ExecScript/bin64/"
 ````
 Now to run the compiler type:
 ````Shell
-excs-wrapper
+excs-wrapper [FileToCompile] [OutputFile]
 ````
-##### You cant pass arguments with the command
 
 ## Keywords / Macros
 - "str [VarName]" A macro for std::string
