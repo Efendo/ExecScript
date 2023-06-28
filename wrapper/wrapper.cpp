@@ -11,7 +11,7 @@ Date of Creation: 15th of july 2023
 */
 
 int main(int argc, char** argv) {
-    if (argc == 3 && strcmp(argv[1], "-h") == 0){
+    if (argc == 3 && strcmp(argv[1], "-c") == 0){
         std::string filename = argv[2];
         std::string OfName = argv[3];
         std::string fileContents = getFileContents(filename);
