@@ -58,12 +58,17 @@ export PATH="$PATH:$HOME/ExecScript/bin64/"
 
 To compile a file, type:
 ````Shell
-excs-wrapper -c [FileToCompile] [OutputFile]
+excs -c [FileToCompile] [OutputFile]
 ````
 
 To get help, type:
 ````Shell
-excs-wrapper -h
+excs -h
+````
+
+to make an excs project (you dont need to), type:
+````Shell
+excs -new [ProjectName]
 ````
 
 ## Keywords / Macros
