@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 #include <fstream>
-
+#ifndef GETFILE_HPP
+#define GETFILE_HPP
 //Function to get all contents of a file
 
 std::string getFileContents(const std::string& filename) {
@@ -20,3 +21,4 @@ std::string getFileContents(const std::string& filename) {
 
     return contents;
 }
+#endif

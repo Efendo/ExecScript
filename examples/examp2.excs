@@ -1,7 +1,0 @@
-int main() {
-    print "this is ExecScript!\n";
-    print "type anything! ";
-    str userInput;
-    input userInput;
-    print "you typed: " << userInput;
-}

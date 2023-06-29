@@ -39,7 +39,7 @@ int main(int argc, char** argv) {
     } else if(argc == 3 && strcmp(argv[1], "-new") == 0){
         std::string name = argv[2];
         std::string make = "mkdir " + name; 
-        std::string cmd  = "cd " + name + "; touch run; echo 'excs -c src/main.excs.cpp bin/main\n./bin/main' > run; chmod +x run; mkdir src; touch src/main.excs.cpp; mkdir bin; mkdir libraries";
+        std::string cmd  = "cd " + name + "; touch run; echo '#!/bin/bash\n\n#################################\n#### ExecScript build script ####\n#################################\n\n# Config\nexcs -c src/main.excs.cpp main\n./main' > run; chmod +x run; mkdir src; touch src/main.excs.cpp; mkdir libraries";
         system(make.c_str());
         system(cmd.c_str());
     } else {
