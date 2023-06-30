@@ -49,16 +49,21 @@ execute this command to install ExecScript:
 git clone https://github.com/Efendo/ExecScript/
 ````
 
-##### Note: it has been compiled on x86-64 mac, you may have to recompile it using: ````make -s````
+##### Note: it has been compiled on x86-64 mac, you may have to recompile it using: ````cd ExecScript && make -s && cd ..````
 
 then add it to your path
 ````Shell
-export PATH="$PATH:$HOME/ExecScript/bin64/"
+export PATH="$PATH:$HOME/ExecScript/bin/"
 ````
 
 To compile a file, type:
 ````Shell
 excs -c [FileToCompile] [OutputFile]
+````
+
+To compile a file to C++, type:
+````Shell
+excs -cpp [FileToCompile] [OutputFile]
 ````
 
 To get help, type:
@@ -68,8 +73,10 @@ excs -h
 
 to make an excs project (you dont need to), type:
 ````Shell
-excs -new [ProjectName]
+excs -m [ProjectName]
 ````
+###### to run it (the project), type ./run 
+
 
 ## Keywords / Macros
 - "str [VarName]" A macro for std::string
@@ -91,6 +98,8 @@ excs -new [ProjectName]
 - "mod" a macro for % (modulo)
 
 - "blueprint" a macro for class
+
+- "elif" its for "else if"
 
 # Links
 
