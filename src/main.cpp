@@ -12,6 +12,7 @@ Date of Creation: 15th of july 2023
 
 int main(int argc, char** argv) {
     if (argc == 4 && strcmp(argv[1], "-c") == false){
+        std::cout << "> ExecScript programming language by Efendo" << std::endl;
         std::string filename = argv[2];
         std::string OfName = argv[3];
         std::string fileContents = getFileContents(filename);
@@ -22,9 +23,9 @@ int main(int argc, char** argv) {
         midcomp.close();
         std::string cmd = "g++ .midcomp.cpp -o " + OfName;
         if (std::system(cmd.c_str()) == 0) {
-            std::cout << "Compilation successful." << std::endl;
+            std::cout << "> \033[33mCompilation successfull.\033[0m" << std::endl;
         } else {
-            std::cerr << "Compilation failed." << std::endl;
+            std::cerr << "> \033[31mCompilation failed.\033[0m" << std::endl;
         }
         system("rm .midcomp.cpp");
     } else if(argc == 2 && strcmp(argv[1], "-h") == false){
@@ -47,7 +48,6 @@ int main(int argc, char** argv) {
         std::string filename = argv[2];
         std::string OfName = argv[3];
         std::string fileContents = getFileContents(filename);
-        std::cout << fileContents << std::endl;
         std::ofstream midcomp(OfName + ".cpp");
         std::string headings = "#include <iostream>\n#define print std::cout<<\n#define main int main(int argc, char** argv)\n#define elif else if\n#define NumPointer int*\n#define isnt !=\n#define blueprint class\n#define is ==\n#define mod %\n#define input std::cin>>\n#define str std::string\n#define pointer char*\n#define clr_text system(\"clear\")\n";
         midcomp << headings << fileContents;
