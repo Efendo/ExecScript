@@ -44,6 +44,7 @@ int main(int argc, char** argv) {
         system(make.c_str());
         system(cmd.c_str());
     } else if (argc == 4 && strcmp(argv[1], "-cpp") == false) {
+        std::cout << "> ExecScript programming language by Efendo" << std::endl;
         std::string filename = argv[2];
         std::string OfName = argv[3];
         std::string fileContents = getFileContents(filename);
@@ -51,6 +52,7 @@ int main(int argc, char** argv) {
         std::string headings = "#include <iostream>\n#define print std::cout<<\n#define main int main(int argc, char** argv)\n#define elif else if\n#define NumPointer int*\n#define isnt !=\n#define blueprint class\n#define is ==\n#define mod %\n#define input std::cin>>\n#define str std::string\n#define pointer char*\n#define clr_text system(\"clear\")\n";
         midcomp << headings << fileContents;
         midcomp.close();
+        std::cout << "> \033[34m" << "Wrapped " << filename << "\033[0m" << std::endl;
     } else {
         std::cerr << "Usage: \n"
                   << "    -c compile two files. Its arguments are [File to compile] [Output file]\n"

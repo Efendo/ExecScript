@@ -16,7 +16,8 @@ std::string getFileContents(const std::string& filename) {
         file.read(&contents[0], contents.size() + 1);
         file.close();
     } else {
-        std::cerr << "> \033[31mFile could not be located: " << filename << "\033[0m" << std::endl;
+        std::cerr << "> \033[31mFile could not be located. " << "Abort!" <<"\033[0m" << std::endl;
+        abort();
     }
 
     return contents;
