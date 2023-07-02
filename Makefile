@@ -1,5 +1,5 @@
 CC := g++
-MAIN_EXCS := src/*.cpp
+MAIN_EXCS := src/main.cpp
 #############################
 #### ExecScript Makefile ####
 #############################

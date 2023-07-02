@@ -34,7 +34,7 @@ int main(int argc, char** argv) {
         << "    -c compile two files. Its arguments are [File to compile] [Output file]\n"
         << "    -h prints out this prompt. Dont pass any other arguments with this\n"
         << "    -m makes a new excs project. Its argument is [Project Name]\n"
-        << "    -cpp works like -c but compiles to C++\n"
+        << "    -cpp works like -c but compiles to C++. For the second argument you dont have to put .cpp at the end\n"
         << std::endl;
         return 1;
     } else if(argc == 3 && strcmp(argv[1], "-m") == false){
@@ -52,13 +52,15 @@ int main(int argc, char** argv) {
         std::string headings = "#include <iostream>\n#define print std::cout<<\n#define main int main(int argc, char** argv)\n#define error std::cerr\n#define elif else if\n#define NumPointer int*\n#define isnt !=\n#define blueprint class\n#define is ==\n#define mod %\n#define input std::cin>>\n#define str std::string\n#define pointer char*\n#define clr_text system(\"clear\")\n";
         midcomp << headings << fileContents;
         midcomp.close();
-        std::cout << "> \033[34m" << "Wrapped " << filename << "\033[0m" << std::endl;
-    } else {
+        std::cout << "> \032[34m" << "Wrapped " << filename << "\033[0m" << std::endl;
+    } else if(argc == 2 && strcmp(argv[1],"-u") == false) {
+        std::system("olddir = $(pwd); cd $HOME/ExecScript; git reset --hard && git pull; make -s; cd olddir;");
+    } else{
         std::cerr << "Usage: \n"
                   << "    -c compile two files. Its arguments are [File to compile] [Output file]\n"
                   << "    -h prints a help prompt. Dont pass any other arguments with it\n"
                   << "    -m makes a new excs project. Its argument is [Project Name]\n"
-                  << "    -cpp works like -c but compiles to C++\n"
+                  << "    -cpp works like -c but compiles to C++. For the second argument you dont have to put .cpp at the end\n"
                   << std::endl;
     }
     return 0;
