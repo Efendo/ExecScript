@@ -54,7 +54,7 @@ int main(int argc, char** argv) {
         midcomp.close();
         std::cout << "> \032[34m" << "Wrapped " << filename << "\033[0m" << std::endl;
     } else if(argc == 2 && strcmp(argv[1],"-u") == false) {
-        std::system("olddir = $(pwd); cd $HOME/ExecScript; git reset --hard && git pull; make -s; cd olddir;");
+        std::system("export olddir=$(pwd); cd $HOME/ExecScript; git reset --hard && git pull; make -s; cd $olddir;");
     } else{
         std::cerr << "Usage: \n"
                   << "    -c compile two files. Its arguments are [File to compile] [Output file]\n"
