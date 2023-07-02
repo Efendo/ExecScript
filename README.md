@@ -1,8 +1,4 @@
 <style>
-    h1,h2,h5,p,a,h6 {
-        text-align: center;
-    }
-
     a {
         background: #010b1c;
         border-radius: 25px;
@@ -24,8 +20,6 @@ this is a programming language called ExecScript thats like cpp but supposed to 
 
 ![](https://img.shields.io/badge/State-Alpha-yellow) ![](https://img.shields.io/github/last-commit/Efendo/Execscript) ![](https://img.shields.io/badge/Created%20by-Efendo-success) ![](https://img.shields.io/github/languages/top/Efendo/Execscript)
 
-
-[ExecScript Trailer/Presentation](https://raw.githubusercontent.com/Efendo/ExecScript-trailer/master/ExecScript.mp4)
 # Docs
 
 ## What is ExecScript?
@@ -47,6 +41,8 @@ main {
 execute this command to install ExecScript:
 ````Shell
 git clone https://github.com/Efendo/ExecScript/
+# or
+gh repo clone Efendo/ExecScript
 ````
 
 ##### Note: it has been compiled on x86-64 mac, you may have to recompile it using: ````cd ExecScript && make -s && cd ..````
