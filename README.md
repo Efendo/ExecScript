@@ -101,6 +101,8 @@ excs -m [ProjectName]
 
 - "elif" its for "else if"
 
+- "error" a macro for std::cerr
+
 # Links
 
 [Efendo's Github](https://github.com/Efendo)

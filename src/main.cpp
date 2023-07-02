@@ -49,7 +49,7 @@ int main(int argc, char** argv) {
         std::string OfName = argv[3];
         std::string fileContents = getFileContents(filename);
         std::ofstream midcomp(OfName + ".cpp");
-        std::string headings = "#include <iostream>\n#define print std::cout<<\n#define main int main(int argc, char** argv)\n#define elif else if\n#define NumPointer int*\n#define isnt !=\n#define blueprint class\n#define is ==\n#define mod %\n#define input std::cin>>\n#define str std::string\n#define pointer char*\n#define clr_text system(\"clear\")\n";
+        std::string headings = "#include <iostream>\n#define print std::cout<<\n#define main int main(int argc, char** argv)\n#define error std::cerr\n#define elif else if\n#define NumPointer int*\n#define isnt !=\n#define blueprint class\n#define is ==\n#define mod %\n#define input std::cin>>\n#define str std::string\n#define pointer char*\n#define clr_text system(\"clear\")\n";
         midcomp << headings << fileContents;
         midcomp.close();
         std::cout << "> \033[34m" << "Wrapped " << filename << "\033[0m" << std::endl;
