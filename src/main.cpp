@@ -37,7 +37,6 @@ int main(int argc, char** argv) {
         << "    -cpp works like -c but compiles to C++. For the second argument you dont have to put .cpp at the end\n"
         << "    -u is used to update ExecScript\n"
         << std::endl;
-        return 1;
     } else if(argc == 3 && strcmp(argv[1], "-m") == false){
         std::string name = argv[2];
         std::string make = "mkdir " + name; 
