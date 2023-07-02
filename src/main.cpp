@@ -11,7 +11,7 @@ Date of Creation: 15th of july 2023
 */
 
 int main(int argc, char** argv) {
-    std::system("if [ '$(git rev-parse HEAD)' != '$(git rev-parse origin/HEAD)' ];then echo '> \033[31mExecScript is outdated, to update it type \"excs -u\"\033[0m'; fi  ");
+    std::system("if [ '$(git rev-parse HEAD)' != '$(git rev-parse origin/HEAD)' ]; then echo '> \033[31mExecScript is outdated, to update it type \"excs -u\"\033[0m'; fi  ");
     if (argc == 4 && strcmp(argv[1], "-c") == false){
         std::cout << "> ExecScript programming language by Efendo" << std::endl;
         std::string filename = argv[2];
