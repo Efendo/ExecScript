@@ -117,4 +117,4 @@ excs -u
 
 [View on Github](https://github.com/Efendo/ExecScript/)
 
-[Try it on replit](https://replit.com/@Efendo/ExecScript?v=1)
+[Try it on replit](https://replit.com/@Efendo/ExecScript-Template?v=1)
