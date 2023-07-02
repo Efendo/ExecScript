@@ -56,6 +56,8 @@ then add it to your path
 export PATH="$PATH:$HOME/ExecScript/bin/"
 ````
 
+## Commands
+
 To compile a file, type:
 ````Shell
 excs -c [FileToCompile] [OutputFile]
@@ -75,14 +77,20 @@ to make an excs project (you dont need to), type:
 ````Shell
 excs -m [ProjectName]
 ````
+###### to run it (the project), type ./run
 
 to update ExecScript, type:
 ````Shell
 excs -u
 ````
 
-###### to run it (the project), type ./run 
+## Trouble shooting / error numbers
 
+### err127
+#### -File not found
+##
+### err349
+#### -File is empty
 
 ## Keywords / Macros
 - "str [VarName]" A macro for std::string
