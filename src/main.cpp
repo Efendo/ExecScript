@@ -56,7 +56,7 @@ int main(int argc, char** argv) {
         midcomp.close();
         std::cout << "> \032[34m" << "Wrapped " << filename << "\033[0m" << std::endl;
     } else if(argc == 2 && strcmp(argv[1],"-u") == false) {
-        std::system("if [ '$(git rev-parse HEAD)' != '$(git rev-parse origin/HEAD)' ];then export olddir=$(pwd); cd $HOME/ExecScript; git reset --hard && git pull; make -s; cd $olddir; else echo > \033[31mExecScript is already up-to date\033[0m");
+        std::system("if [ '$(git rev-parse HEAD)' != '$(git rev-parse origin/HEAD)' ]; then export olddir=$(pwd); cd $HOME/ExecScript; git reset --hard && git pull; make -s; cd $olddir; else echo -e '\033[31mExecScript is already up-to-date\033[0m'; fi");
     } else{
         std::cerr << "Usage: \n"
                   << "    -c compile two files. Its arguments are [File to compile] [Output file]\n"
