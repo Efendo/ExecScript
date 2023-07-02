@@ -11,6 +11,7 @@ Date of Creation: 15th of july 2023
 */
 
 int main(int argc, char** argv) {
+    std::system("if [ '$(git rev-parse HEAD)' != '$(git rev-parse origin/HEAD)' ];then echo '> \033[31mExecScript is outdated, to update it type \"excs -u\"\033[0m'; fi  ");
     if (argc == 4 && strcmp(argv[1], "-c") == false){
         std::cout << "> ExecScript programming language by Efendo" << std::endl;
         std::string filename = argv[2];
@@ -35,6 +36,7 @@ int main(int argc, char** argv) {
         << "    -h prints out this prompt. Dont pass any other arguments with this\n"
         << "    -m makes a new excs project. Its argument is [Project Name]\n"
         << "    -cpp works like -c but compiles to C++. For the second argument you dont have to put .cpp at the end\n"
+        << "    -u is used to update ExecScript\n"
         << std::endl;
         return 1;
     } else if(argc == 3 && strcmp(argv[1], "-m") == false){
@@ -54,13 +56,14 @@ int main(int argc, char** argv) {
         midcomp.close();
         std::cout << "> \032[34m" << "Wrapped " << filename << "\033[0m" << std::endl;
     } else if(argc == 2 && strcmp(argv[1],"-u") == false) {
-        std::system("export olddir=$(pwd); cd $HOME/ExecScript; git reset --hard && git pull; make -s; cd $olddir;");
+        std::system("if [ '$(git rev-parse HEAD)' != '$(git rev-parse origin/HEAD)' ];then export olddir=$(pwd); cd $HOME/ExecScript; git reset --hard && git pull; make -s; cd $olddir; else echo > \033[31mExecScript is already up-to date\033[0m");
     } else{
         std::cerr << "Usage: \n"
                   << "    -c compile two files. Its arguments are [File to compile] [Output file]\n"
                   << "    -h prints a help prompt. Dont pass any other arguments with it\n"
                   << "    -m makes a new excs project. Its argument is [Project Name]\n"
                   << "    -cpp works like -c but compiles to C++. For the second argument you dont have to put .cpp at the end\n"
+                  << "    -u is used to update ExecScript\n"
                   << std::endl;
     }
     return 0;

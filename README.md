@@ -75,6 +75,12 @@ to make an excs project (you dont need to), type:
 ````Shell
 excs -m [ProjectName]
 ````
+
+to update ExecScript, type:
+````Shell
+excs -u
+````
+
 ###### to run it (the project), type ./run 
 
 
