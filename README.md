@@ -1,10 +1,4 @@
 <style>
-    a {
-        background: #010b1c;
-        border-radius: 25px;
-        padding: 8px;
-    }
-        
     a[href='https://efendo.github.io/ExecScript/'] {
   		pointer-events: none;
   		cursor: default;
@@ -84,7 +78,7 @@ excs -u
 
 ### err127
 #### -File not found
-##
+
 ### err349
 #### -File is empty
 
