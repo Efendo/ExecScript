@@ -34,8 +34,9 @@ main {
 ## Install ExecScript
 execute this command to install ExecScript:
 ````Shell
+# Using git
 git clone https://github.com/Efendo/ExecScript/
-# or
+# Using gh CLI
 gh repo clone Efendo/ExecScript
 ````
 

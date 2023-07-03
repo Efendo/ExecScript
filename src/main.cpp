@@ -12,7 +12,7 @@ Date of Creation: 15th of july 2023
 
 int main(int argc, char** argv) {
     if (argc == 4 && strcmp(argv[1], "-c") == false){
-        std::cout << "> ExecScript programming language by Efendo" << std::endl;
+        std::cout << "> ExecScript programming language by Efendo <https://github.com/Efendo/ExecScript/>" << std::endl;
         std::string filename = argv[2];
         std::string OfName = argv[3];
         std::string fileContents = getFileContents(filename);
@@ -28,7 +28,7 @@ int main(int argc, char** argv) {
         }
         system("rm .midcomp.cpp");
     } else if(argc == 2 && strcmp(argv[1], "-h") == false){
-        std::cout << "ExecScript by Efendo <https://github.com/Efendo/ExecScript>\n"
+        std::cout << "> ExecScript programming language by Efendo <https://github.com/Efendo/ExecScript>\n"
         << "\n"
         << "Usage: \n"
         << "    -c compile two files. Its arguments are [File to compile] [Output file]\n"
@@ -43,7 +43,7 @@ int main(int argc, char** argv) {
         system(make.c_str());
         system(cmd.c_str());
     } else if (argc == 4 && strcmp(argv[1], "-cpp") == false) {
-        std::cout << "> ExecScript programming language by Efendo" << std::endl;
+        std::cout << "> ExecScript programming language by Efendo <https://github.com/Efendo/ExecScript/>" << std::endl;
         std::string filename = argv[2];
         std::string OfName = argv[3];
         std::string fileContents = getFileContents(filename);
