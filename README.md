@@ -69,11 +69,6 @@ excs -m [ProjectName]
 ````
 ###### to run it (the project), type ./run
 
-to update ExecScript, type:
-````Shell
-excs -u
-````
-
 ## Trouble shooting / error numbers
 
 ### err127
