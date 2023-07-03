@@ -12,7 +12,7 @@
 ## sounds like the js function, is a cpp dialect
 this is a programming language called ExecScript thats like cpp but supposed to be easier
 
-![](https://img.shields.io/badge/State-Alpha-yellow) ![](https://img.shields.io/github/last-commit/Efendo/Execscript) ![](https://img.shields.io/badge/Created%20by-Efendo-success) ![](https://img.shields.io/github/languages/top/Efendo/Execscript)
+![](https://img.shields.io/badge/State-Beta-yellow) ![](https://img.shields.io/github/last-commit/Efendo/Execscript) ![](https://img.shields.io/badge/Created%20by-Efendo-success) ![](https://img.shields.io/github/languages/top/Efendo/Execscript)
 
 # Docs
 
