@@ -5,4 +5,6 @@ MAIN_EXCS := src/main.cpp
 #############################
 
 excs:
+	mkdir -p bin
 	$(CC) -w $(MAIN_EXCS) -o bin/excs $^
+
