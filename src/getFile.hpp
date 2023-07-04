@@ -16,12 +16,12 @@ std::string getFileContents(const std::string& filename) {
         file.read(&contents[0], contents.size() + 1);
         file.close();
     } else {
-        std::cerr << "> \033[31m"<< "err127" <<"\033[0m" << std::endl;
-        exit(1);
+        std::cerr << "> \033[31m"<< "error 127: File " << filename << " was not found"<<"\033[0m" << std::endl;
+        exit(127);
     }
     if(contents == "\0"){
-        std::cerr << "> \033[31m" << "err349" <<"\033[0m" << std::endl;
-        exit(1);
+        std::cerr << "> \033[31m" << "error 349: provided file is empty" << "\033[0m" << std::endl;
+        exit(349);
     }
 
     return contents;
